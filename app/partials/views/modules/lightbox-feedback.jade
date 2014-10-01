@@ -1,0 +1,12 @@
+a.close(href="", title="close")
+    span.icon.icon-delete
+form
+    h2.title Create Feedback
+    fieldset
+        select.type(ng-model="feedback.type", ng-options="t.id as t.name for t in issueTypes")
+    fieldset
+        textarea(ng-model="feedback.description", placeholder="feedback" data-required="true")
+    fieldset
+        input.hidden(type="submit")
+        a.button.button-green(href="", title="Create")
+            span Create
